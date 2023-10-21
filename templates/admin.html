@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <!-- Custom fonts for this template-->
+    <link href="{{ url_for('static',filename='vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet"
+          type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="{{ url_for('static',filename='css/bootstrap-select.css') }}"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+
+    <!-- Custom styles for this template-->
+    <link href="{{ url_for('static',filename='css/sb-admin-2.min.css') }}" rel="stylesheet">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" /> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
+
+    <!-- JavaScript at end of body for optimized loading -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!-- Materialize icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </script>
+    <script src="static/jquery.js">
+    
+    </script>
+    <script src="static/jquery2.js">
+    </script>
+ 
+    <!-- <script src="/MtechFinalProj/templates/static/jquery.js"></script> -->
+    <!-- <script src="./scripts/2jquery.js"></script> -->
+    <!-- <script src="./scripts/app.js"></script> -->
+
+</head>
+
+    <body id="page-top">
+         <nav class="bg-dark">
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Home</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+
+                
+                <li><a href="controls.html">About Us</a></li>
+                
+            </ul>
+        </div>
+    </nav> 
+     <div class="jumbotrum" style="width: 1500px; height: 300px; background-image: url({{url_for('static',filename='../static/img/student.jpeg')}});">
+          <h4 class="text-white text-center"> Attendance Monitoring  Using Facial Recognition</h4>
+    </div>
+    <div><br><br>
+       <div class="container" style="border-radius:25px;background:#ffff; border: 2px solid black; width:600px; hight:200px;">
+           <p>{{error}}</p> 
+            <h3 class="text-primary">Admin Login Here</h3>
+            <form class="form-group" action="/admin_login" method="POST">
+                <label class="text-primary">Username</label>
+                <input type="text" name="username" class="from-control">
+                <label class="text-primary">Password</label>
+                <input type="text" name="pass" class="form-control">
+                <input type="submit" value="login" class="btn btn-primary">
+                
+            </form>
+    
+    </div>
+
+    <div class="bg-dark" style= "margin-top: 135px; width: 1000p; height: 100px;">
+        <h5  class="text-white" style="padding-top: 40px; margin-left: 500px;">Facial recognition attendace system @2021</h5></div>
+    
+    </body>
+
+    </html>
